@@ -240,3 +240,132 @@ docker build -t <image_repo> <docker_file_directory_path>
 
 To create image and up container using docker compose file
 docker-compose -f <docker compose file> up -d --build
+
+
+<table class="table table-bordered">
+<tbody><tr>
+<th class="ts">Command</th>
+<th class="ts">Use Case</th>
+<th class="ts">Example</th>
+</tr>
+<tr>
+<td><b>docker run</b></td>
+<td>Create and start a new container</td>
+<td>docker run -it ubuntu bash</td>
+</tr>
+<tr>
+<td><b>docker ps</b></td>
+<td>List running containers</td>
+<td>docker ps</td>
+</tr>
+<tr>
+<td><b>docker ps -a</b></td>
+<td>List all containers (including stopped ones)</td>
+<td>docker ps -a</td>
+</tr>
+<tr>
+<td><b>docker start</b></td>
+<td>Start a stopped container</td>
+<td>docker start my_container</td>
+</tr>
+<tr>
+<td><b>docker stop</b></td>
+<td>Stop a running container</td>
+<td>docker stop my_container</td>
+</tr>
+<tr>
+<td><b>docker restart</b></td>
+<td>Restart a container</td>
+<td>docker restart my_container</td>
+</tr>
+<tr>
+<td><b>docker rm</b></td>
+<td>Remove a stopped container</td>
+<td>docker rm my_container</td>
+</tr>
+<tr>
+<td><b>docker rmi</b></td>
+<td>Remove an image</td>
+<td>docker rmi my_image</td>
+</tr>
+<tr>
+<td><b>docker images</b></td>
+<td>List all Docker images</td>
+<td>docker images</td>
+</tr>
+<tr>
+<td><b>docker pull</b></td>
+<td>Download an image from a registry</td>
+<td>docker pull nginx</td>
+</tr>
+<tr>
+<td><b>docker build</b></td>
+<td>Build an image from a Dockerfile</td>
+<td>docker build -t my_image </td>
+</tr>
+<tr>
+<td><b>docker exec</b></td>
+<td>Run a command in a running container</td>
+<td>docker exec -it my_container bash</td>
+</tr>
+<tr>
+<td><b>docker logs</b></td>
+<td>View the logs of a container</td>
+<td>docker logs my_container</td>
+</tr>
+<tr>
+<td><b>docker cp</b></td>
+<td>Copy files/folders between a container and the local filesystem</td>
+<td>docker cp my_container:/path/to/file /local/path</td>
+</tr>
+<tr>
+<td><b>docker inspect</b></td>
+<td>Display detailed information on a container or image</td>
+<td>docker inspect my_container</td>
+</tr>
+<tr>
+<td><b>docker network ls</b></td>
+<td>List all Docker networks</td>
+<td>docker network ls</td>
+</tr>
+<tr>
+<td><b>docker network create</b></td>
+<td>Create a new Docker network</td>
+<td>docker network create my_network</td>
+</tr>
+<tr>
+<td><b>docker-compose up</b></td>
+<td>Create and start containers using a docker-compose.yml file</td>
+<td>docker-compose up</td>
+</tr>
+<tr>
+<td><b>docker-compose down</b></td>
+<td>Stop and remove containers, networks, images, and volumes</td>
+<td>docker-compose down</td>
+</tr>
+<tr>
+<td><b>docker volume ls</b></td>
+<td>List all Docker volumes</td>
+<td>docker volume ls</td>
+</tr>
+<tr>
+<td><b>docker volume create</b></td>
+<td>Create a new Docker volume</td>
+<td>docker volume create my_volume</td>
+</tr>
+<tr>
+<td><b>docker info</b></td>
+<td>Display system-wide information</td>
+<td>docker info</td>
+</tr>
+<tr>
+<td><b>docker stats</b></td>
+<td>Display a live stream of container resource usage statistics</td>
+<td>docker stats</td>
+</tr>
+<tr>
+<td><b>docker attach</b></td>
+<td>Attach local standard input, output, and error streams to a container</td>
+<td>docker attach my_container</td>
+</tr>
+</tbody></table>
